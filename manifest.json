@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Redact",
+    "description": "Allows a user to block content on webpages based on some basic rules.",
+    "version": "0.1",
+  
+    "icons": { 
+        "16": "icon_redact_16.png",
+        "48": "icon_redact_48.png",
+        "128": "icon_redact_128.png" 
+    },
+    
+    "content_scripts": [
+        {
+            "matches": ["https://www.yahoo.com/"],
+            "js": ["jquery-2.2.0.min.js", "scripts.js"]
+        }
+        ]
+  }
